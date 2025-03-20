@@ -1,16 +1,53 @@
-# book_finder_application
+Book Finder Application
 
-A new Flutter project.
+A simple Flutter project to search and manage books.
 
-## Getting Started
+Getting Started
 
-This project is a starting point for a Flutter application.
+Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+Install Flutter SDK
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Install Dart SDK
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Set up an emulator or connect a physical device
+
+Installation
+
+Clone the repository:
+
+Navigate to the project directory:
+
+Install dependencies:
+
+Run the app:
+
+Dependencies
+
+flutter: Core Flutter framework.
+
+cupertino_icons: Provides iOS-style icons.
+
+bloc and flutter_bloc: For state management.
+
+http: Used for making API calls.
+
+sqflite_common_ffi and sqflite: Database management.
+
+equatable: Helps with value comparison in Dart.
+
+flutter_test: For testing the app.
+
+flutter_lints: Provides recommended linting rules.
+
+After adding or updating dependencies, run:
+
+Project Structure
+
+Running Tests
+
+To run tests, execute:
+
+License
+
+This project is licensed under the MIT License.
