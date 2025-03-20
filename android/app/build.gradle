@@ -1,0 +1,39 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace "com.example.book_finder_application"
+    compileSdk 34  // <-- Replace with actual SDK version
+    ndkVersion "25.2.9519653" // <-- Replace with your installed NDK version
+
+    defaultConfig {
+        applicationId "com.example.book_finder_application"
+        minSdkVersion 21  // <-- Adjust as needed (Flutter supports 21+)
+        //noinspection OldTargetApi
+        targetSdkVersion 33 // <-- Match with compileSdk
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:2.0.20"
+}
